@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nameTextInputLayout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Biz Name"
+                    android:id="@+id/nameEditText"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="#000" />
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/locationTextInputLayout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Location"
+                    android:id="@+id/locationEditText"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="#000"/>
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameTextInputLayout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:id="@+id/usernameEditText"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="#000"/>
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailTextInputLayout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:id="@+id/emailEditText"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="#000"/>
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ExpandableListView
+                android:id="@+id/expand_activities_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="?android:attr/colorBackground"
+                android:entries="Fashion, Catering"
+                android:headerDividersEnabled="true"
+                android:scrollbars="horizontal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/passwordTextInputLayout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:textColor="#000"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/confirmPasswordTextInputLayout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/confirmPasswordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="Confirm password"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:textColor="#000"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>
